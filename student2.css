@@ -1,0 +1,223 @@
+.gallery {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px; /* Adjust the max-width of the gallery */
+    margin: 0 auto; /* Center the gallery horizontally */
+}
+
+.gallery-item {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    margin-bottom: 20px; /* Adjust the spacing between items */
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    padding: 5px;
+    transition: transform 0.3s ease;
+}
+
+ .gallery-item:hover {
+    transform: scale(1.02);
+} 
+
+.gallery-item a {
+    text-decoration: none;
+}
+
+.gallery-item img {
+    max-width: 350px; 
+    height: 250px;
+    margin-left: 0px; 
+    margin-right: 0px;
+    border-radius: 12px;
+    padding: 2px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.text {
+    flex-grow: 1; /* Allow text to expand to fill remaining space */
+    align-self: flex-start;
+}
+
+.text h3 {
+    margin-top: 8px;
+}
+
+.text p {
+    margin: 12px;
+    font-size: 14px;
+    text-align: left;
+}
+
+#error {
+    text-align: left;
+    color: red;
+}
+
+
+ form {
+    max-width: 800px;
+    margin: 10px;
+    padding: 10px;
+    text-align: left;
+    margin-bottom: 20px; 
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+
+} 
+
+label {
+    display: block; 
+    width: 100%;
+    margin: 5px;
+}
+
+.optionsLabel {
+    vertical-align: top;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: darkblue;
+} 
+
+input[type="text"], input[type="email"] {
+    vertical-align: middle;
+    width: 100%; 
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input[type="text"]:focus, input[type="email"]:focus {
+    background-color: #efd;
+}
+
+input[type="checkbox"] {
+    vertical-align: middle;
+}
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 0px;
+    align-content: center;
+    width: calc(100% - 8px);
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+select {
+    width: 100%;
+    margin-left: 2px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%; 
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea:focus {
+    background-color: #efd;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    width: 500px;
+    padding-bottom: 6px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f4f4f4;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 9999;
+}
+
+.popup-title {
+    width: 480px;
+    margin: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.popup-content {
+    width: 480px;
+    margin: 5px;
+    margin-bottom: 10px;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+}
+
+.lbl {
+    display: inline-block;
+    padding: 4px;
+    width: 160px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.popup-value {
+    display: inline-block;
+    width: 300px;
+    padding: 4px;
+    text-align: left;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+}
+.popup-confirm-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.popup-confirm-btn:hover {
+    background-color: #45a049;
+}
+.popup-cancel-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.popup-cancel-btn:hover {
+    background-color: #da190b;
+}

@@ -1,0 +1,237 @@
+/* Reset some default styles */
+h1, h2, h3, p {
+    margin: 6px;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+h1 {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    font-size: 28px;
+    font-weight: 300;
+    color: #333;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 300;
+    color: #333;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 200;
+    color: #555;
+}
+
+hr {
+    border: 1px solid darkgreen;
+}
+
+body {
+    background-color: rgba(105,125,137, 0.7); /* White color with 50% opacity */
+    background-blend-mode: lighten; /* Adjust blend mode as needed */
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+/* Basic styles for header and navigation */
+header {
+    background-color: black;
+    padding: 2px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* We make sure it's always above other content */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul img {
+    width: 80px;
+    height: 38px;
+    margin-top: 4px;
+    margin-left: 4px;
+    margin-right: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li#team {
+    margin-left: auto;
+    margin-right: 5px;
+} 
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li.button {
+    background-color: black;   /* #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+nav ul li.button-active {
+    background-color: black;   /* #4CAF50; /* Green */
+    border-bottom: 3px solid #eee;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+nav ul li.button:hover {
+    background-color: darkgray; /* #45a049; /* Darker Green */
+    color: lightgray;
+}
+
+nav ul li.button-active:hover {
+    background-color: darkgray; /* #45a049; /* Darker Green */
+    color: lightgray;
+}
+
+nav ul li#team {
+    margin-left: auto;
+}
+
+/* Basic styles for footer */
+footer {
+    background-color: darkgray;
+    color: #fff;
+    padding: 4px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 12px; 
+}
+
+footer p a {
+    text-decoration: none;
+    padding: 5px;
+    color: darkgreen;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    font-size: 12px;
+}
+footer p a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: darkgreen;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 11px; */
+}
+
+.goTop {
+    text-align: right;
+}
+
+.container {
+    max-width: 820px; /* Adjust as needed */
+    text-align: center;
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.divMain {
+    max-width: 800px;
+    margin: 10px;
+    padding: 10px;
+    text-align: left;
+    margin-bottom: 20px; /* Adjust the spacing between items */
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+
+}
+
+.pageinfo {
+    margin: 8px;
+    margin-top: 16px;
+    text-align: justify;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.pageheader {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 50px;
+}
+
+.pageheader p {
+    color: #333;
+}
+
+.pageheader p.error {
+    color: red;
+}
+
+.moreinfo {
+    font-size: 12px;
+    color: darkgreen;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.moreinfo:hover {
+    background-color: darkgreen;
+    color: white;
+}
+
+
+/* body {
+    margin:auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+fieldset {
+    border-radius: 12px;
+    border-width: 3px;
+    text-align: center;
+    background-color: floralwhite;
+}
+
+legend{
+    background-color: snow;
+}
+
+.box {
+    background-color: whitesmoke;
+} */

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="student2.css">
+
+    <script src="js/student2.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><img src="img/logo.jpg" alt="Gallery"></li>
+                <li class="button"><a href="homepage.html">Home</a></li>
+                <li class="button"><a href="https://w1993122.users.ecs.westminster.ac.uk/fmany/profile.html">Profile</a></li>
+                <li class="button"><a href="https://w1967125.users.ecs.westminster.ac.uk/fmany/gallery.html">Gallery</a></li>
+                <li class="button"><a href="https://w2015728.users.ecs.westminster.ac.uk/fmany/shop.html">Shop</a></li>
+                <li class="button-active"><a href="feedback.html">Feedback</a></li>
+                <li class="button"><a href="https://w1967125.users.ecs.westminster.ac.uk/fmany/sitemap.html">Sitemap</a></li>
+                <li class="button" id="team"><a href="https://w1993122.users.ecs.westminster.ac.uk/fmany/team.html">Team</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main>
+            <section class="pageheader">
+                <h1><strong>Feedback Form</strong></h1>
+                <p class="error" id="field-validation"></p>
+                <br>
+            </section>
+            <div>
+                <form id="feedbackForm" onsubmit="return validateForm()">
+                    <label for="name"><b>Name*</b></label>
+                    <input type="text" id="name" name="name" required placeholder="Please input your full name">
+                    <label for="age"><b>Age*</b></label>
+                    <input type="text" id="age" name="age" required placeholder="Please input your age (between 12 and 45)" value="19">
+                    <label for="email"><b>Email*</b></label>
+                    <input type="email" id="email" name="email" required placeholder="Please input your email address">
+                    <label for="email"><b>Phone</b></label>
+                    <input type="text" id="phone" name="phone" placeholder="Please input your phone number">
+                    
+                    <label for="suggestion"><b>Do you want to receive news about our services?</b></label>
+                    <label class="optionsLabel" for="yes"><input type="radio" id="yes" name="like-services" value="yes" checked> Yes</label>
+                    <label class="optionsLabel" for="no"><input type="radio" id="no" name="like-services" value="no"> No</label>
+                    <br>
+                    <label><b>What other area are you interested to hear about?</b></label>
+                    <label class="optionsLabel" for="interested-area1"><input type="checkbox" id="interested-area1" name="interested-area" value="Efforts to fight inequality"> Efforts to fight inequality</label>
+                    <label class="optionsLabel" for="interested-area2"><input type="checkbox" id="interested-area2" name="interested-area" value="Economy and public policy"> Economy and public policy</label>
+                    <label class="optionsLabel" for="interested-area3"><input type="checkbox" id="interested-area3" name="interested-area" value="Gender stereotypes"> Gender stereotypes</label>
+                    <label class="optionsLabel" for="interested-area4"><input type="checkbox" id="interested-area4" name="interested-area" value="Family planning and abortion"> Family planning and abortion</label>
+                    <br>
+                    <label for="marketing-channel"><b>How do you want to receive news from us?</b></label>
+                    <select id="marketing-channel" name="marketing-channel">
+                        <option value="Via email">Via email</option>
+                        <option value="Via SMS">Via SMS</option>
+                        <option value="Via WhatsApp">Via WhatsApp</option>
+                    </select>
+                    <label for="suggestion"><b>Do you have any suggestion for us?</b></label>
+                    <textarea id="suggestion" name="suggestion" rows="3" placeholder="Please input your suggestions here"></textarea>
+                    <input type="hidden" id="email-content" name="email-content" value="Default value">
+
+                    <input type="submit" value="Submit">
+                </form> 
+                <br><br><br>
+            </div>
+            <br>
+
+            <!-- Confirmation popup structure -->
+            <div id="popup" class="popup">
+                <div class="popup-title">Your Data</div>
+                <div class="popup-content">
+                    <div class="lbl">Name</div><div class="popup-value" id="popup-name"></div>
+                    <div class="lbl">Age</div><div class="popup-value" id="popup-age"></div>
+                    <div class="lbl">Email</div><div class="popup-value" id="popup-email"></div>
+                    <div class="lbl">Phone</div><div class="popup-value" id="popup-phone"></div>
+                    <div class="lbl">Liked Services</div><div class="popup-value" id="popup-like-services"></div>
+                    <div class="lbl">Interested In</div><div class="popup-value" id="popup-interested"></div>
+                    <div class="lbl">Marketing Channels</div><div class="popup-value" id="popup-marketing-channel"></div>
+                    <div class="lbl">Suggestions</div><div class="popup-value" id="popup-suggestion"></div>
+                </div>
+                <button class="popup-confirm-btn" onclick="confirmData()">Confirm</button>
+                <button class="popup-cancel-btn" onclick="cancelPopup()">Cancel</button>
+            </div>
+            
+            <!-- Confirmation popup -->
+            <div id="overlay" class="overlay"></div>
+
+        </main>
+    </div>
+
+
+    <footer>
+        <p>
+            &copy; 2024 FMANY. All Rights Reserved.
+            &nbsp; &nbsp;
+            <a href="pageEditor_ST2.html"> [ Student 2 - Page Editor ] </a>
+        </p>
+    </footer>
+</body>
+</html>
